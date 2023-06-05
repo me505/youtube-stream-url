@@ -2,10 +2,11 @@
     "name": "youtube-stream-url",
     "version": "2.4.1",
     "description": "Get stream url from youtube link",
-    "source": "src/index.js",
-    "main": "dist/index.js",
+    "main": "./dist/cjs/index.cjs",
+    "module": "./src/esm/index.mjs",
     "scripts": {
-        "build": "parcel build"
+        "run:cjs": "node ./src/cjs/index.cjs",
+        "run:esm": "node ./src/esm/index.mjs"
     },
     "repository": {
         "type": "git",
